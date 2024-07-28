@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:vehicle_name",
+ "creation": "2024-07-24 20:50:07.651591",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_name",
+  "model",
+  "year",
+  "vehicle_type",
+  "column_break_gqcm",
+  "license_plate_number",
+  "color",
+  "is_published",
+  "route",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle_name",
+   "fieldtype": "Data",
+   "label": "Vehicle Name ",
+   "unique": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "column_break_gqcm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "license_plate_number",
+   "fieldtype": "Data",
+   "label": "License Plate Number"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Vehicle Type"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2024-07-25 17:22:10.036972",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Vehicle",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "vehicle",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "vehicle_name"
+}

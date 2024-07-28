@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vehicle Details</h1>
+    <p><strong>Vehicle Name:</strong> {{ doc.vehicle_name }}</p>
+    <p><strong>Model:</strong> {{ doc.model }}</p>
+    <p><strong>Year:</strong> {{ doc.year }}</p>
+    <p><strong>Type:</strong> {{ doc.vehicle_type }}</p>
+    <p><strong>License Plate Number:</strong> {{ doc.license_plate_number }}</p>
+    <p><strong>Color:</strong> {{ doc.color }}</p>
+    <p><strong>Is Published:</strong> {{ 'Yes' if doc.is_published else 'No' }}</p>
+    <p><strong>Route:</strong> {{ doc.route }}</p>
+    {% if doc.image %}
+        <p><strong>Image:</strong></p>
+        <img src="{{ doc.image }}" alt="Vehicle Image" style="max-width: 300px;">
+    {% endif %}
+    <br>
+    <a href="http://localhost:8004/ride-booking/new?vehicle={{ doc.vehicle_name }}" class="button">Create Ride Booking</a>
+    <a href="/vehicles" class="button">Back to Vehicle List</a>
+</body>
+</html>

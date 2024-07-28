@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-25 12:41:06.345218",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "account_sid",
+  "auth_token",
+  "from_phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_sid",
+   "fieldtype": "Data",
+   "label": "Account SID"
+  },
+  {
+   "fieldname": "auth_token",
+   "fieldtype": "Password",
+   "label": "Auth Token"
+  },
+  {
+   "fieldname": "from_phone_number",
+   "fieldtype": "Data",
+   "label": "From Phone Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-25 13:13:48.245561",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Twilio Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

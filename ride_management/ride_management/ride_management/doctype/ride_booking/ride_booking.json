@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RO-{MM}-{YYYY}-{####}",
+ "creation": "2024-07-24 20:37:05.566425",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gcyn",
+  "amended_from",
+  "customer_name",
+  "booking_date",
+  "phone_number",
+  "pickup_location",
+  "column_break_mitn",
+  "vehicle",
+  "driver",
+  "price_per_km",
+  "currency",
+  "total_amount",
+  "section_break_ci2z",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gcyn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ride Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "pickup_location",
+   "fieldtype": "Small Text",
+   "label": "Pickup Location"
+  },
+  {
+   "fieldname": "price_per_km",
+   "fieldtype": "Currency",
+   "label": "Price Per km",
+   "options": "currency"
+  },
+  {
+   "columns": 4,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Ride Booking Item"
+  },
+  {
+   "fieldname": "column_break_mitn",
+   "fieldtype": "Column Break",
+   "options": "INR\nUSD"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "section_break_ci2z",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "Currency",
+   "options": "INR\nUSD"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-25 16:50:28.149344",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Ride Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
